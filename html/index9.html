@@ -34,7 +34,18 @@
 	<br />
 	<div>
 		<script type="text/javascript">
+		function doFi(){
+			document.write("first one"); 
+			doSe();
+		}
 
+		function doSe(){
+			document.write("second one"); 
+			doFi();
+		}
+
+		doFi();
+		
 		</script>
 	</div>
 
