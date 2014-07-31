@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<title>Ozzie3000   23d JS tutorials onbeforeunload </title>
+</head>
+
+<body >
+	Text goes here for testing and texting.
+ 
+ <!-- onUnload works on older browsers, but it slow and users could leave before http request finishes.  function below has greater assurance your code will run.  -->
+
+ 
+<!-- how the magic works   
+This demo illustrates how to create an event handler for the client-side onbeforeuload event. Notice that the string returned by the event handler is displayed in the dialog box the user is shown when the page is being unloaded. If the user clicks Cancel, they'll remain on the page; if they click OK, they'll exit the page as they specified (either jumping to another Web page or closing the browser).
+Here are some links you can click to leave this page. Note that if you are visiting with Internet Explorer or FireFox 0.9 or higher, you'll be asked if you really want to leave this page. This also works when closing the browser.
+-->
+
+
+</body>
+
+<script language="JavaScript">
+  window.onbeforeunload = confirmExit;
+  function confirmExit()
+  {
+    return "You have attempted to leave this page.  If you have made any changes to the fields without clicking the Save button, your changes will be lost.  Are you sure you want to exit this page?";
+  }
+</script>
+</html>
+
