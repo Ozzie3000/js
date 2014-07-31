@@ -7,6 +7,8 @@
 		function function_name (argument) {
 			// body...
 		}
+		
+
 
 
 		
@@ -18,45 +20,53 @@
 <body>
 	<div>
 		<script type="text/javascript">
+			var dudes = new Array("Bob", "Sam", "Arnold");
+			document.write(dudes.length);
+
+		</script>
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+			var chicks = new Array("Lisa", "Erin", "Jessica")
+
+			document.write(dudes.length);
+
+		</script>
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+			var people = dudes.concat(chicks);
+
+			document.write(people);
+		</script>
+		<br />
+		<script type="text/javascript">
+			document.write(people.length);
+		</script>
 		
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+			var peopleduo = chicks.concat(dudes);
+
+			document.write(peopleduo);
 
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-		
-
-
-		</script>
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-				
-
+			document.write(people[0]);
 
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-			
-
-
-		</script>
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-
-
-		</script>
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-
+			document.write(peopleduo[0]);
 
 		</script>
 	</div>
