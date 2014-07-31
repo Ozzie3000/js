@@ -8,8 +8,21 @@
 		// body...
 	}
 // constructor function  //
-	function people
+	function people(name, age){
+		this.name = name;
+		this.age = age;
+		// this will associate the two funcs  //
+		this.yearsUntilRetire = yearsleft;
+	}
 
+	function yearsleft(){
+		var numyears = 65 - this.age;
+		return numyears;
+	}
+
+	var Amidala = new people("Natalie Portman", 33);
+	var Obi = new people("Obi-wan Kenobi", 55);
+	var Ozzie3000 = new people("The Oz", 1);
 		
 </script>
 <title>Ozzie3000   _ JS tutorials </title>
@@ -19,22 +32,26 @@
 <body>
 	<div>
 		<script type="text/javascript">
-		
-
+			document.write(Amidala.name);
+			document.write(" " + Amidala.age + " years old.");
+			document.write(" will retire in " + Amidala.yearsUntilRetire() + " years.");
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
+			document.write(Obi.name);
+			document.write(" " + Obi.age + " years old.");
+			document.write(" will retire in " + Obi.yearsUntilRetire() + " years.");
 		
-
-
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-				
+			document.write(Ozzie3000.name);
+			document.write(" " + Ozzie3000.age + " years old.");
+			document.write(" will retire in " + Ozzie3000.yearsUntilRetire() + " years.");
 
 
 		</script>
