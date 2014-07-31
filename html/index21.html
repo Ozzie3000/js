@@ -14,9 +14,6 @@
 		function function_name (argument) {
 			// body...
 		}
-
-
-
 		</script>
 	</div>
 	<br /><br />
@@ -28,8 +25,7 @@
 		do{
 			document.write(x + " Stuff or words! <br / >");
 			x++;
-		}while (x<20);
-
+		}while (x<10);
 
 		</script>
 	</div>
@@ -37,7 +33,7 @@
 	<div>
 		<script type="text/javascript">
 				
-		// running code goes before condition. Runs 1 time than checks condition.  //
+	// running code goes before condition. Runs 1 time than checks condition.  //
 		var x = 35;
 
 		do{
@@ -51,15 +47,33 @@
 	<div>
 		<script type="text/javascript">
 			
+			function party(){
+				var b = 5
+				do{
+					document.write(b + " Beer bottles brought to the party<br />");
+					b++;
+				}while (b<10);
+			}
 
+		party();
+		document.write(b);
 
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
+// local var  //
+		function party(){
+				var b = 35
+				do{
+					document.write(b + " Beer bottles brought to the party<( var outside limit.) <br />");
+					b++;
+				}while (b<10);
+			}
 
-
+		party();
+		document.write(b);
 		</script>
 	</div>
 	<br /><br />
