@@ -20,6 +20,19 @@
 <body>
 	<div>
 		<script type="text/javascript">
+			var movies = new Array("Predator", "Bury my wounded knee", "Last of Mohicans", "Pale Rider", "NoLD");
+			var stringA = movies.join();
+// will print out everythign together separated by commas"
+			document.write(stringA);
+
+		</script>
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+		var stringB = movies.join(" / ");
+// pass in 3 characters.  space, / , space  :  even between each index//
+		document.write(stringB);
 			
 
 		</script>
@@ -27,19 +40,16 @@
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-			
-
-		</script>
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-			
-
+		document.write(movies[4] + "<br />")	;
+// verify what the last index is  ///
 			
 		</script>
 		<br />
 		<script type="text/javascript">
+			var string_last_index = movies[movies.length - 1];
+
+		  /*  document.write(movies);   debug code. test.  different way of calling last index in case you don't know how many there are; or want a dynamic  */
+		document.write(string_last_index);
 			
 		</script>
 		
@@ -47,6 +57,10 @@
 	<br /><br />
 	<div>
 		<script type="text/javascript">
+		// lets kick that pesky last index out of the array   //
+		movies.pop();
+
+		document.write(movies);
 			
 
 		</script>
