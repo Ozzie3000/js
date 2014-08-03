@@ -18,25 +18,93 @@
 	<div>
 		<script type="text/javascript">
 			var bp = new Array("head", "shoulders", "knees", "toes");
+			
+			document.write("this is array bp: " + bp + "<br />")
+			document.write("array bp w/ reverse function: "+bp.reverse());
+			document.write("<br /><br />");
+// bp.reverse() has to be undone to get back to normal //
 			bp.reverse();
+			document.write("this is array bp : " + bp + "<br />");
+			document.write(" this is index 0 " + bp[0]+ "<br />");
+			document.write(" this is index 1 " + bp[1]+ "<br />");
+			document.write(" this is index 2 " + bp[2]+ "<br />");
+			document.write(" this is index 3 " + bp[3]+ "<br />");
 
-			document.write(bp);
+			document.write("in JS it is more difficult than ruby to count backwards in an index <br />")
+			document.write(" this is index -1 " + bp[bp.length -1]+ "<br />");
+			document.write(" this is index -2 " + bp[bp.length -2]+ "<br />");
+			document.write(" this is index -3 " + bp[bp.length -3]+ "<br />");
+			document.write(" this is index -4 " + bp[bp.length -4]+ "<br />");
 
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-		var bp_last new Array();
-		var x = 1
-			while(x < bp.length -1){
-				bp_last = bp[bp-x];
+		var bp_new = new Array();
+		var x = 0
+		
+			while(x < bp.length ){
+				 /* here we can then push fruit bp_new
+				 or pass indexed from bp to bp_new line 37. 
+				 lines 37 and  38 do the same thing.  redundant.
+				 fruit = bp[x];  */
+				 bp_new.push(bp[x]);
+
 				x++;
-			}
-		}
-		bp_last();
-		document.write(bp_last);
+			};
 		
+		document.write("pushing indexes from bp to bp_new : " + bp_new);
+			
+		</script>
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+		var last_one = new Array();
+			x = bp.length - 1
+			i = 0
+			
+			while(i < bp.length ){
+				blah = bp[x];
+				
+				last_one.push(blah);
+				x = x -1;
+				i = i + 1;
+			};
+			
+			
+		document.write("array last_one (diff way to bp.reverse): "+last_one);
+
+		</script>
+		<br /><br />
+		<script type="text/javascript">
+		
+		</script>
+		
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+	
+
+		</script>
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+		var ef = new Array();
+		x = bp.length - 1
+		i = 0
+		
+		while(i < bp.length ){
+			ef.push(bp[x]);
+			x = x -1;
+			i = i + 1;
+		};
+		
+			
+		document.write(ef);
 			
 
 		</script>
@@ -44,36 +112,19 @@
 	<br /><br />
 	<div>
 		<script type="text/javascript">
+			var gh = new Array();
+			x = bp.length - 1
+			i = 0
+		
+			while(i < bp.length ){
+				gh.push(bp[x]);
+				x = x -1;
+				i = i + 1;
+			};
 		
 			
-		</script>
-		<br />
-		<script type="text/javascript">
-			
-			
-		</script>
+		document.write(gh);
 		
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-		
-			
-
-		</script>
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-			
-
-		</script>
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-		
-
 		</script>
 	</div>
 	<br /><br />
