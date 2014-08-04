@@ -10,7 +10,7 @@
 		
 		
 </script>
-<title>Ozzie3000   32 JS tutorials. reverse, push, sort </title>
+<title>Ozzie3000   32 JS tutorials. reverse, push, sort, join </title>
 
 </head>
 
@@ -107,13 +107,18 @@
 		mart.sort();
 		document.write("array mart sort method: "+mart+ "<br />");
 			
-
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-		
+		// insert what stuff inside "" after each index; except last index  //
+		var string1 = mart.join();
+		document.write("array mart join method w/ empty argument(): "+string1+ "<br />");
+		/* empty .join() basically like not doing anything to array(at a glance), but passes each index lumped together to form a string  */
+
+		var string1 = mart.join("money");
+		document.write("array mart join method(\"money\"): "+string1+ "<br />");
 		
 		</script>
 	</div>
