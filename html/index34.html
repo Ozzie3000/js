@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <script type="text/javascript"></script>
-<title>Ozzie3000   34 JS tutorials. printing array elements </title>
+<title>Ozzie3000   34 JS tutorials. printing array elements using object.length </title>
 
 </head>
 
@@ -20,7 +20,10 @@
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-		
+		var foodz = new Array("bananas","apples","blue berries", "pineapples", "avocadoes");
+		foodz.sort();
+
+		document.write("array foodz: "+foodz);
 
 
 		</script>
@@ -28,7 +31,10 @@
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-				
+			document.write("array foodz, but looping through: <br />");
+			for(i=0;i<foodz.length;i++){
+				document.write(foodz[i]+"<br />");
+			}
 
 
 		</script>
