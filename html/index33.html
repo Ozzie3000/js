@@ -14,21 +14,28 @@
 		function function_name (argument) {
 			// body...
 		}
+		</script>
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+		// prompt built in. takes 2 parameters //
+		var pie = prompt("What is your name?!?!", "");
+
+		document.write("Hello "+pie+ ".  Sorry I have a bad memory.");
 
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-		
+		var foodz = new Array(3);
+		for(i=0;i<3;i++){
+			foodz[i] = prompt("what are your 3 favorite foods?", "");
+		}
 
-
-		</script>
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-				
+		document.write("So "+pie+" your 3 favorite foods are: "+foodz);
+		document.write("<br /> or was that "+foodz.reverse()+ "?");
 
 
 		</script>
