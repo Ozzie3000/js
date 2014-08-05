@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <script type="text/javascript"></script>
-<title>Ozzie3000   37 JS tutorials.  Date objects </title>
+<title>Ozzie3000   37b JS tutorials.  Date objects </title>
 
 </head>
 
@@ -20,11 +20,24 @@
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-		function doSomething(){
-			document.write("1st string ");
+		//  only seems to work on Chrome and not Firefox  //
+
+		function printTime(){
+			var now = new Date();
+			var hours = now.getHours();
+			var mins = now.getMinutes();
+			var secs = now.getSeconds();
+			document.write(hours+":"+mins+":"+secs+"<br />");
 		}
 
-		setInterval(doSomething, 2000);
+		setInterval(printTime, 2000);
+
+		</script>
+	</div>
+	<br /><br />
+	<div>
+		<script type="text/javascript">
+			
 
 
 		</script>
@@ -32,35 +45,14 @@
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-			function doMore(){
-			alert("2nd string ");
-		}
-
-		//  setInterval("doMore()", 5000);	//
-		//   or   //
-		   setInterval(doMore, 5000);	
-
-
-		</script>
-	</div>
-	<br /><br />
-	<div>
-		<script type="text/javascript">
-			function doStuff(){
-			document.write("3rd string" + "<br />");
-		}
-
-		var run = setInterval("doStuff()", 2000);
+		
 		
 		</script>
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-			// function w/o a name.   //
-			setInterval(function () {
-			    alert("A horse with No Name.  ~America 1971");
-			}, 5000);
+			
 
 		</script>
 	</div>
