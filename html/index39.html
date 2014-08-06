@@ -28,6 +28,15 @@
 	</div>
 	<br /><br />
 	<div>
+		<form name="bform">
+			Uname: <input type="text" name="Username">
+			Pword: <input type="password" name="Password">
+			<input type="submit" value="submit!">
+
+		</form>
+	</div>
+	<br /><br />
+	<div>
 		<script type="text/javascript">
 		// first form  first element    //
 			var x = document.forms[0].elements[0].name;
@@ -43,9 +52,14 @@
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-			
+	// another option to to refer the form name  ///		
+			// 2nd form  first element    //
+			var a = document.forms[0].elements[0].name;
+			document.write(a);
 
-
+			// 2nd form  second element    //	
+			var b = document.forms[0].elements[1].name;
+			document.write("<br>"+ b);
 		</script>
 	</div>
 	<br /><br />
