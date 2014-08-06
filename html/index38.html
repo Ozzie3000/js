@@ -4,7 +4,6 @@
 <meta charset="utf-8" />
 <script type="text/javascript"></script>
 <title>Ozzie3000   38 JS tutorials.  Accessing Forms </title>
-
 </head>
 
 <body>
@@ -25,16 +24,18 @@
 			Password: <input type="password" />
 			<input type="submit" value="Submit!">
 		</form>
-
-
-
+<!-- xhtml/html form created; JS creates a form object to corresponds to it -->
 
 	</div>
 	<br /><br />
 	<div>
 		<script type="text/javascript">
-				
+		/* js creates a	form array
+		JS numbers each number in your array.  1st form array[0] element  
+		length of form is number items/elements */
 
+		var x = document.forms[0].length;
+		document.write(x);
 
 		</script>
 	</div>
